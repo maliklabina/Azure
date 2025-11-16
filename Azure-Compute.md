@@ -333,21 +333,6 @@ az dedicated-host create \
 
 ------------------------------------------------------------------------
 
-## Best Practices
-
-- **Right-size VMs** - Choose appropriate size for workload
-- **Use managed disks** - Better performance and security
-- **Enable auto-shutdown** - Dev/test VMs to save costs
-- **Use scale sets** - Auto-scaling for consistency
-- **Implement monitoring** - Track VM health and performance
-- **Use tags** - Organize and manage resources
-- **Backup critical data** - Regular snapshots and backups
-- **Security groups** - Restrict inbound/outbound traffic
-- **Update regularly** - Security patches and updates
-- **Use spot instances** - Cost optimization for non-critical workloads
-
-------------------------------------------------------------------------
-
 ## Cost Optimization
 
 - **Deallocate stopped VMs** - Stop doesn't free compute
