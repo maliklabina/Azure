@@ -521,21 +521,6 @@ Track network metrics:
 
 ------------------------------------------------------------------------
 
-## Security Best Practices
-
-- **Segment networks** - Use multiple subnets and NSGs
-- **Implement least privilege** - Only allow necessary traffic
-- **Enable DDoS protection** - Standard or Premium tier
-- **Use firewalls** - Azure Firewall or third-party solutions
-- **Encrypt traffic** - Use SSL/TLS for data in transit
-- **Monitor logs** - Enable NSG flow logs and diagnostics
-- **Regular audits** - Review and update rules periodically
-- **Use private endpoints** - Secure connections to Azure services
-- **Implement WAF** - Web Application Firewall on Application Gateway
-- **Plan IP addressing** - Avoid overlapping subnets
-
-------------------------------------------------------------------------
-
 ## Common Commands
 
 ```bash
@@ -558,25 +543,3 @@ az network vnet delete --resource-group myResourceGroup --name myVNet
 az network vnet show --resource-group myResourceGroup --name myVNet
 ```
 
-------------------------------------------------------------------------
-
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Cannot reach VM | Check NSG rules, check routing, verify public IP |
-| VPN connection fails | Verify shared key, check gateway status, check routing |
-| Slow performance | Check bandwidth, verify routing, check load balancer health |
-| DNS resolution fails | Verify DNS zone configuration, check record sets |
-| Traffic not routing | Check UDRs, verify peering, check NSG rules |
-
-------------------------------------------------------------------------
-
-## Cost Optimization
-
-- **Use NAT Gateway** - More cost-effective than public IPs
-- **Remove unused resources** - VNets, IPs, gateways
-- **Consolidate traffic** - Use load balancers efficiently
-- **Reserved capacity** - For predictable traffic patterns
-- **Monitor bandwidth** - Track data transfer costs
-- **Use ExpressRoute** - For high volume data transfer
