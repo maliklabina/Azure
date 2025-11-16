@@ -504,23 +504,6 @@ Cross-platform tool for managing storage:
 
 ------------------------------------------------------------------------
 
-## Best Practices
-
-- **Use appropriate storage tier** - Match access patterns to costs
-- **Enable redundancy** - GRS for critical data
-- **Implement lifecycle policies** - Archive old data automatically
-- **Use SAS tokens** - Instead of sharing account keys
-- **Enable encryption** - At rest and in transit
-- **Monitor access logs** - Track all storage operations
-- **Implement virtual network rules** - Restrict access
-- **Regular backups** - For critical data
-- **Use managed identities** - Instead of connection strings
-- **Clean up old data** - Remove unnecessary blobs and snapshots
-- **Enable soft delete** - Recover accidentally deleted data
-- **Use Azure Data Lake** - For big data analytics
-
-------------------------------------------------------------------------
-
 ## Common Commands
 
 ```bash
@@ -545,25 +528,3 @@ az storage account update --name mystorageaccount --sku Standard_RAGRS
 
 ------------------------------------------------------------------------
 
-## Troubleshooting
-
-| Issue | Solution |
-|-------|----------|
-| Access denied | Check account keys, verify SAS permissions, check firewall rules |
-| Slow uploads | Use parallel uploads, check network, consider Premium tier |
-| Blob not found | Verify blob name, check container, verify authentication |
-| Storage account locked | Check account status, verify limits not exceeded |
-| SAS token expired | Generate new token, increase expiry time |
-| Replication lag | Normal for GRS, use LRS for immediate consistency |
-
-------------------------------------------------------------------------
-
-## Cost Optimization
-
-- **Choose right storage tier** - Hot for frequent, Cool/Archive for rare access
-- **Use lifecycle policies** - Automatically transition data
-- **Enable compression** - Reduce storage size
-- **Monitor usage** - Identify unused data
-- **Use block blobs** - More cost-effective than page blobs
-- **Consolidate accounts** - Reduce number of storage accounts
-- **One-year/three-year reservations** - Reserved capacity discounts
