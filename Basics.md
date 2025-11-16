@@ -422,21 +422,6 @@ az billing invoice list
 
 ------------------------------------------------------------------------
 
-## Best Practices
-
-- **Use resource groups** - Organize related resources
-- **Use tags** - Label resources for organization and billing
-- **Enable monitoring** - Track performance and health
-- **Implement security** - NSGs, firewalls, RBAC
-- **Use managed services** - Reduce operational overhead
-- **Regular backups** - Protect critical data
-- **Cost optimization** - Right-size resources, use reserved instances
-- **Disaster recovery** - Plan for failures
-- **Document infrastructure** - IaC with ARM templates or Terraform
-- **Regular updates** - Security patches and updates
-
-------------------------------------------------------------------------
-
 ## Common Resources Hierarchy
 
 ```
